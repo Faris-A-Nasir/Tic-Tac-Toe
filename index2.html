@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="Tic Tac Toe.png" type="image/png">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="ad-container"></div>
+
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn" class="bn6">New Game</button>
+    </div>
+<div class="Headercontainer">
+    <button id="gameHeading" class="homeBtn">
+        <svg>
+            <symbol id="s-text">
+              <text text-anchor="middle" x="50%" y="80%">TIC  TAC  TOE</text>
+              <text text-anchor="middle" x="51%" y="80%">TIC  TAC  TOE</text>
+              
+            </symbol>
+          
+            <g class = "g-ants">
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+          </svg>
+    </button> 
+</div>
+    <!-- <audio id="audio" src="music.mp3" preload="auto"></audio>
+        <button id="playPauseBtn">Music</button>  -->
+        <button id="user" class="bn5">Player</button>
+<div class="container">
+    
+    <div class="game">
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+    </div>
+</div>
+<div class="score-board">
+    <div class="score">
+        <p id="player1Name">player1 Score: </p>
+        <p id="player1">0</p>
+    </div>
+    <div class="score">
+        <p id="player2Name">player2 Score: </p>
+        <p id="player2">0</p>
+    </div>
+</div>
+<div class="buttons">
+    <button id="reset-btn" class="bn5">Reset Game</button>
+
+</div>
+<!-- HTML -->
+<!-- Add this to the head section of your HTML -->
+<script data-ad-client="ca-app-pub-8704504953407288~3770896413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="index.js" ></script>
+</body>
+</html>

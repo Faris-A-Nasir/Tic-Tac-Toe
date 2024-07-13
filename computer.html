@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="Tic Tac Toe.png" type="image/png">
+
+    <link rel="stylesheet" href="computer.css">
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn" class="bn6">New Game</button>
+    </div>
+    <div class="Headercontainer">
+        <button id="gameHeading" class="homeBtn">
+            <svg>
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="80%">TIC  TAC  TOE</text>
+                  <text text-anchor="middle" x="51%" y="80%">TIC  TAC  TOE</text>
+                  
+                </symbol>
+              
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
+        </button> 
+    </div>
+<main>        
+    <button id="user" class="bn5">Player VS Computer</button>
+
+<div class="container" >
+    
+    <div class="game">
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+        <button class="box" id="glowText"></button>
+    </div>
+</div>
+<div class="score-board">
+    <div class="score">
+        <p>Player Score: </p>
+        <p id="player">0</p>
+    </div>
+    <div class="score">
+        <p>Computer Score: </p>
+        <p id="comp">0</p>
+    </div>
+</div>
+<div class="buttons">
+    <button id="reset-btn" class="bn5">Reset Game</button>
+</div>
+</main>
+<script src="computer.js" ></script>
+</body>
+</html>

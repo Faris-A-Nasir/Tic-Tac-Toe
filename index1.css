@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(b.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+
+h1,h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user-info0,.user-info1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(41, 39, 39);
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+
+#player1 , #player2
+{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+
+#start-btn,#back-btn
+{
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+#start-btn:hover
+{
+    color: rgb(4, 138, 240);
+    cursor: pointer;
+    border: none;
+}
+#back-btn:hover
+{
+    color: rgb(248, 2, 223);
+    cursor: pointer;
+    border: none;
+}
+
+.hide0,.hide1
+{
+    display: none;
+}
+
+#TicImg
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 0.3rem;
+}
+
+#start-btn1
+{
+    margin-top: 10px;
+}
+
+#start-btn1:hover{
+    color: #dd15da;
+}
+
+#start-btn0:hover{
+    color: #dd15da;
+}
+
+.Choicepic
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bn5 {
+    padding: 1.2rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    vertical-align: left;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 1; /* Change opacity to 1 to make it always visible */
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+
+svg {
+    display: block;
+    font: 10rem 'Montserrat';
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #1a189f;
+  animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+  stroke: #d70606;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #f4f003;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #01e5f5;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #150075;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color:  #151719;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below 0.001rem linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 1rem;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+

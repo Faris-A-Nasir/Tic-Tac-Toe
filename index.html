@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="Tic Tac Toe.png" type="image/png">
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+  <main>
+        <div class="user-info0 hide0">
+          <div id="container">
+            <svg viewBox="0 0 960 300">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">TIC TAC TOE</text>
+                <text text-anchor="middle" x="51%" y="80%">TIC TAC TOE</text>
+                
+              </symbol>
+            
+              <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+            <img src="Tic Tac Toe.png" alt="tic-tac-toe" id="TicImg">
+            
+            <div class="waviy">
+              <span style="--i:1">E</span>
+              <span style="--i:2">n</span>
+              <span style="--i:3">t</span>
+              <span style="--i:4">e</span>
+              <span style="--i:5">r</span>
+              <span style="--i:6"></span>
+              <span style="--i:7">Y</span>
+              <span style="--i:8">o</span>
+              <span style="--i:9">u</span>
+              <span style="--i:10">r</span>
+              <span style="--i:11"></span>
+              <span style="--i:12">N</span>
+              <span style="--i:13">a</span>
+              <span style="--i:14">m</span>
+              <span style="--i:15">e</span>
+              <span style="--i:16">s</span>
+              
+           
+             </div>
+
+            <input type="text" id="player1" placeholder="Player 1">
+            <input type="text" id="player2" placeholder="Player 2">
+            <div>
+            <button id="start-btn" class="bn5">Start Game</button>
+            <button id="back-btn" class="bn5">Back</button>
+          </div>
+          </div>
+        </div>
+        <div class="user-info1 hide1">
+          <div id="container">
+            
+            <svg viewBox="0 0 960 300">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">TIC TAC TOE</text>
+                <text text-anchor="middle" x="51%" y="80%">TIC TAC TOE</text>
+                
+              </symbol>
+            
+              <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+
+            <img src="Tic Tac Toe.png" alt="tic-tac-toe" id="TicImg">
+            
+            <div class="waviy">
+              <span style="--i:1">C</span>
+              <span style="--i:2">H</span>
+              <span style="--i:3">O</span>
+              <span style="--i:4">O</span>
+              <span style="--i:5">S</span>
+              <span style="--i:6">E</span>
+              <span style="--i:7"></span>
+              <span style="--i:8">T</span>
+              <span style="--i:9">H</span>
+              <span style="--i:10">E</span>
+              <span style="--i:11"></span>
+              <span style="--i:12">O</span>
+              <span style="--i:13">P</span>
+              <span style="--i:14">T</span>
+              <span style="--i:15">I</span>
+              <span style="--i:16">O</span>
+              <span style="--i:17">N</span>
+           
+             </div>
+            <button id="start-btn1" class="bn5"><img src="CompvsPlayer.png" class="Choicepic">Single-Player</button>
+            <button id="start-btn0" class="bn5"><img src="twoPlayer.png" class="Choicepic">Multi-Player</button>
+          </div>
+        </div>
+    </main>
+    <script src="index.js" ></script>
+</body>
+</html>
